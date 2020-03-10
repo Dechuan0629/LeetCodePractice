@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1583877542 source:e:\c_code_lab\leetcodepractice\3-parts-separated-array\main.c
+	<stdio.h>
+	<stdlib.h>
+	<stdbool.h>
+
