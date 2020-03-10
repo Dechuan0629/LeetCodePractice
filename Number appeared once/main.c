@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 int* singleNumber(int* nums, int numsSize, int* returnSize);
-int transfer(int x);
+
 
 int main()
 {
