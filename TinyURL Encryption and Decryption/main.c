@@ -10,14 +10,15 @@ int main()
     char *str_un;
     str_un = (char*)malloc(50);
     char *str_en,*str_decry;
+    printf("Please input the Url: ");
     scanf("%s",str_un);
-    printf("\nOriginal Url:%s\n\n",str_un);
+    printf("\nOriginal Url: %s\n\n",str_un);
     str_en = encode(str_un);
     free(str_un);
-    printf("Encreypted Url:%s\n\n",str_en);
+    printf("Encreypted Url: %s\n\n",str_en);
     str_decry = decode(str_en);
     free(str_en);
-    printf("Decreypter Url:%s\n",str_decry);
+    printf("Decreypter Url: %s\n",str_decry);
     free(str_decry);
     return 0;
 
@@ -84,14 +85,14 @@ char* UrlDB(char *Url,char* hash1,int judge){  //当judge = 0时表示加密，当judge 
         Url_temp = (char*)malloc(strlen(Url));
         strcpy(hash_temp,hash1);
         strcpy(Url_temp,Url);
-        return 1;
+        return NULL;
     }
 
     else if(judge == 1){
         if(strcmp(hash1,hash_temp)==0){
             return Url_temp;
         }
-        else return 0;
+        else return NULL;
     }
 }
 

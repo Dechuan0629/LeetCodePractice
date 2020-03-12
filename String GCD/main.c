@@ -6,8 +6,8 @@ char* split(char *str,int len);
 
 int main()
 {
-    char str[10] = "aaaaaaaa";
-    char str2[10] = "aa";
+    char str[10] = "abcabc";
+    char str2[10] = "abc";
     char *str3;
     //str3 = gcdOfStrings(str,str2);
     printf("%s",gcdOfStrings(str,str2));
