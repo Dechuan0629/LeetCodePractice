@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1583841855 source:e:\c_code_lab\leetcodepractice\bracket-generating\main.c
+	<stdio.h>
+	<stdlib.h>
+

@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1584131080 source:e:\c_code_lab\leetcodepractice\shortest sub array\main.c
+	<stdio.h>
+	<stdlib.h>
+	<stdbool.h>
+

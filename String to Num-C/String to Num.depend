@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1584133149 source:e:\c_code_lab\leetcodepractice\string to num\main.c
+	<stdio.h>
+	<stdlib.h>
+	<stdbool.h>
+
