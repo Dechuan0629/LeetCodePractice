@@ -2,12 +2,12 @@
 #include <stdlib.h>
 #include <stdbool.h>
 
-/*LeetCode上调试了半天，一直在报AddressSanitizer，数组越界的错误，print了一下ASize才发现，测试用例原来根本没往函数里传递数组大小，C语言GG*/
+
 
 int main()
 {
-    int num[5] = {17,85,93,-45,-21};
-    int k = 140;
+    int num[5] = {77,19,35,10,-14};
+    int k = 19;
     int result=shortestSubarray(num,5,k);
     printf("%d",result);
     return 0;
@@ -15,7 +15,6 @@ int main()
 
 int shortestSubarray(int* A, int ASize, int K){
     int i,j,temp=0,temp1= 0,min = -1,judge = 0;
-    printf("%d\n",ASize);
     int sum[2][ASize+1];
     int *p[2];
     sum[0][0] = 0;
@@ -27,12 +26,15 @@ int shortestSubarray(int* A, int ASize, int K){
     }
     p[0] = &sum[0][0];
     p[1] = sum[1];
-    quickSort(p,0,ASize);
+    quickSort(p,0,ASize-1);
 
     for(i=0;i<2;i++){
-        for(j=0;j<=ASize;j++) printf("%d ",sum[i][j]);
+        for(j=0;j<=ASize;j++){
+            printf("%d ",sum[i][j]);
+        }
         printf("\n");
     }
+
     for(i=0;i<=ASize;i++){
         if(sum[1][ASize]-sum[1][i]>=K){
             temp1 = sum[0][ASize]-sum[0][i];
