@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1585242111 source:e:\c_code_lab\leetcodepractice\card grouping\main.c
+	<stdio.h>
+	<stdlib.h>
+	<stdbool.h>
+
