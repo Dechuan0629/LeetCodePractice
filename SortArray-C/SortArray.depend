@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1585587299 source:e:\c_code_lab\leetcodepractice\sortarray\main.c
+	<stdio.h>
+	<stdlib.h>
+
