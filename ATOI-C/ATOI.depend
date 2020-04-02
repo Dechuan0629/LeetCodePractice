@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1585849376 source:e:\c_code_lab\leetcodepractice\atoi\main.c
+	<stdio.h>
+	<stdlib.h>
+	<math.h>
+
