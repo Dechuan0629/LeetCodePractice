@@ -24,7 +24,7 @@ class Solution:
 #简单递归回溯算法
 def main():
     test = Solution()
-    s = "3"
+    s = "7396846243"
     print(test.letterCombinations(s))
 
 if __name__ == '__main__':
